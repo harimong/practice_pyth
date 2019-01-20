@@ -4,7 +4,7 @@
 - study source:
 https://wikidocs.net/7022
 
-####1. data type & variable
+####1. 변수와 데이터 타입
 
 ```
 Basic: print() 하면 그냥 안에 있는거 나옴 
@@ -51,5 +51,45 @@ Basic: print() 하면 그냥 안에 있는거 나옴
 >>>string2 = string.replace('a', 'A') //변수에 넣어줘야 인식함, print(string) 하면 소문자로 출력됨(변경x)
 >>>print(string2)
 >>>Abcdfe2A354A32A
+```
+---------------------------
+####2. 기본 자료구조
+```
+- 리스트
+>>>movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+//리스트 마지막에 추가 시,
+>>> movie_rank.append("배트맨")
+['닥터 스트레인지', '스플릿', '럭키', '배트맨']로 저장되어 있음.
+
+//"슈퍼맨"을 "닥터 스트레인지"와 "스플릿" 사이에 추가
+>>> movie_rank.insert(1, "슈퍼맨")
+//index 1번 위치가 rank 0, 1 사이 = 사실 rank[1]에 새로운 데이터 입력
+
+>>>movie_rank.remove('럭키')
+// 럭키만 지워짐
+>>>del movie_rank[3] 
+//동일
+
+- 리스트 저장된 데이터 개수?
+>>>cook = ["1", 2", "3", "4", "5", "6", "7", "8"]
+>>>print(len(cook))
+>>>8
+
+- 슬라이싱
+>>>nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>>print (nums[::2])
+>>>1,3,5,7,9
+
+- join() 메서드 활용
+>>>interest = ['삼성전자', 'LG전자', 'Naver', 'SK하이닉스', '미래에셋대우']
+>>>print(' '.join(interest))
+>>>삼성전자 LG전자 Naver SK하이닉스 미래에셋대우
+
+- 문자열 복사 
+>>>interest_0 = ['삼성전자', 'LG전자', 'SK Hynix']
+>>>interest_1 = interest_0
+>>>interest_1[0] = 'Naver'
+>>>print(interest_0)
+>>>['Naver', 'LG전자', 'SK Hynix']
 
 ```
