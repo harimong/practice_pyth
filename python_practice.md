@@ -145,7 +145,24 @@ Basic: print() 하면 그냥 안에 있는거 나옴
 >>>sum(icecream.values()) //합도 계산가능
 >>>print(icecream.update(new_product)) //일일이 다 못하니깐 
 
+딕셔너리 / 리스트 
+```
 
+-----------------------
+####3. 제어문
+```
+if True :
+    if False:
+        print("1")
+        print("2")
+    else:
+        print("3")
+else :
+    print("4")
+print("5")
 
+결과:
+>>>3 //true 에서 3이 출력되고 
+>>>5 //if 문 밖에서 5가 출력됨 
 
 ```
