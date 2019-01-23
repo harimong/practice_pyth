@@ -92,4 +92,60 @@ Basic: print() 하면 그냥 안에 있는거 나옴
 >>>print(interest_0)
 >>>['Naver', 'LG전자', 'SK Hynix']
 
+- 튜플을 리스트로 변환하기
+>>>interest = ['삼성전자', 'LG전자', 'SK Hyㅑㅜㅅnix']
+>>>data = list(interest)
+
+- data unpacking
+>>>my_tuple = (1, 2, 3)
+>>>a, b, c = my_tuple
+>>>print(a + b + c)
+>>>6
+
+- data unpacking_using * expression
+>> a, b, *c = (0, 1, 2, 3, 4, 5)
+>> a
+0
+>> b
+1
+>> c
+[2, 3, 4]
+
+- dictionary
+>>>temp = {} //temp 라는 이름의 비어있는 딕셔너리
+
+//example 1
+이름	희망 가격
+메로나	1000
+폴라포	1200
+빵빠레	1800
+
+>>>icecream_price = {'메로나':1000, '폴라포':1200, '빵빠레':1800}
+>>>icecream_price['메로나'] = 1300 //메로나 가격만 수정 가능
+>>>print("메로나 가격:", icecream_price['메로나']) //출력도 할 수 있고
+>>>del icecream['Melona'] // 메로나 삭제할 수도 있고
+
+//example 2
+이름	가격	재고
+메로나	 300    20
+비비빅	 400    3
+죠스바	 250    100
+
+>>>inventory = {'메로나': [300, 20], '비비빅': [400, 3], '죠스바': [250, 100]}
+>>>print(inventory['메로나'][0], end=''); print("원")
+
+이름	가격	재고
+월드콘	500 	7
+
+ - dictionary에 추가하려면, 
+>>>inventory['월드콘'] = [500, 7] 
+
+>>>print(icecream.keys()) //key() 매서드는 key 값만 반환 가능
+>>>list(icecream.values()) // value() 매서드로 값만 반환가능
+>>>sum(icecream.values()) //합도 계산가능
+>>>print(icecream.update(new_product)) //일일이 다 못하니깐 
+
+
+
+
 ```
